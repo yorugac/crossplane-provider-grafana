@@ -590,6 +590,7 @@ spec:
                     description: A description of the outlier detector.
                     type: string
                   id:
+                    description: The ID of the outlier detector.
                     type: string
                   interval:
                     description: The data interval in seconds to monitor. Defaults

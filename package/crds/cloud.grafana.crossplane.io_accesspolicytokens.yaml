@@ -166,6 +166,9 @@ spec:
                       (String) Expiration date of the access policy token. Does not expire by default.
                       Expiration date of the access policy token. Does not expire by default.
                     type: string
+                  id:
+                    description: (String) The ID of this resource.
+                    type: string
                   name:
                     description: |-
                       (String) Name of the access policy token.
@@ -280,6 +283,9 @@ spec:
                     description: |-
                       (String) Expiration date of the access policy token. Does not expire by default.
                       Expiration date of the access policy token. Does not expire by default.
+                    type: string
+                  id:
+                    description: (String) The ID of this resource.
                     type: string
                   name:
                     description: |-

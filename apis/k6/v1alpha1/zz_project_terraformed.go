@@ -44,9 +44,9 @@ func (tr *Project) SetObservation(obs map[string]any) error {
 }
 
 // GetID returns ID of underlying Terraform resource of this Project
-func (tr *Project) GetID() string {
+func (tr *Project) GetID() float64 {
 	if tr.Status.AtProvider.ID == nil {
-		return ""
+		return 0
 	}
 	return *tr.Status.AtProvider.ID
 }

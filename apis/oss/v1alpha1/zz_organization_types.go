@@ -57,6 +57,9 @@ type OrganizationInitParameters struct {
 	// +listType=set
 	Editors []*string `json:"editors,omitempty" tf:"editors,omitempty"`
 
+	// (String) The ID of this resource.
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
+
 	// (String) The display name for the Grafana organization created.
 	// The display name for the Grafana organization created.
 	Name *string `json:"name,omitempty" tf:"name,omitempty"`
@@ -201,6 +204,10 @@ type OrganizationParameters struct {
 	// +kubebuilder:validation:Optional
 	// +listType=set
 	Editors []*string `json:"editors,omitempty" tf:"editors,omitempty"`
+
+	// (String) The ID of this resource.
+	// +kubebuilder:validation:Optional
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
 
 	// (String) The display name for the Grafana organization created.
 	// The display name for the Grafana organization created.

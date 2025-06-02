@@ -43,7 +43,8 @@ type LoadTestObservation struct {
 	Created *string `json:"created,omitempty" tf:"created,omitempty"`
 
 	// (Number) Numeric identifier of the load test.
-	ID *string `json:"id,omitempty" tf:"id,omitempty"`
+	// Numeric identifier of the load test.
+	ID *float64 `json:"id,omitempty" tf:"id,omitempty"`
 
 	// friendly identifier of the load test.
 	// Human-friendly identifier of the load test.

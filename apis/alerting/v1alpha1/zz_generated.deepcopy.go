@@ -209,6 +209,11 @@ func (in *ContactPointInitParameters) DeepCopyInto(out *ContactPointInitParamete
 			(*in)[i].DeepCopyInto(&(*out)[i])
 		}
 	}
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
+		*out = new(string)
+		**out = **in
+	}
 	if in.Kafka != nil {
 		in, out := &in.Kafka, &out.Kafka
 		*out = make([]KafkaInitParameters, len(*in))
@@ -609,6 +614,11 @@ func (in *ContactPointParameters) DeepCopyInto(out *ContactPointParameters) {
 		for i := range *in {
 			(*in)[i].DeepCopyInto(&(*out)[i])
 		}
+	}
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
+		*out = new(string)
+		**out = **in
 	}
 	if in.Kafka != nil {
 		in, out := &in.Kafka, &out.Kafka
@@ -2135,6 +2145,11 @@ func (in *MessageTemplateInitParameters) DeepCopyInto(out *MessageTemplateInitPa
 		*out = new(bool)
 		**out = **in
 	}
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
+		*out = new(string)
+		**out = **in
+	}
 	if in.Name != nil {
 		in, out := &in.Name, &out.Name
 		*out = new(string)
@@ -2252,6 +2267,11 @@ func (in *MessageTemplateParameters) DeepCopyInto(out *MessageTemplateParameters
 		*out = new(bool)
 		**out = **in
 	}
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
+		*out = new(string)
+		**out = **in
+	}
 	if in.Name != nil {
 		in, out := &in.Name, &out.Name
 		*out = new(string)
@@ -2357,6 +2377,11 @@ func (in *MuteTimingInitParameters) DeepCopyInto(out *MuteTimingInitParameters) 
 	if in.DisableProvenance != nil {
 		in, out := &in.DisableProvenance, &out.DisableProvenance
 		*out = new(bool)
+		**out = **in
+	}
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
+		*out = new(string)
 		**out = **in
 	}
 	if in.Intervals != nil {
@@ -2478,6 +2503,11 @@ func (in *MuteTimingParameters) DeepCopyInto(out *MuteTimingParameters) {
 	if in.DisableProvenance != nil {
 		in, out := &in.DisableProvenance, &out.DisableProvenance
 		*out = new(bool)
+		**out = **in
+	}
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
+		*out = new(string)
 		**out = **in
 	}
 	if in.Intervals != nil {
@@ -2622,6 +2652,11 @@ func (in *NotificationPolicyInitParameters) DeepCopyInto(out *NotificationPolicy
 	}
 	if in.GroupWait != nil {
 		in, out := &in.GroupWait, &out.GroupWait
+		*out = new(string)
+		**out = **in
+	}
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
 		*out = new(string)
 		**out = **in
 	}
@@ -2805,6 +2840,11 @@ func (in *NotificationPolicyParameters) DeepCopyInto(out *NotificationPolicyPara
 	}
 	if in.GroupWait != nil {
 		in, out := &in.GroupWait, &out.GroupWait
+		*out = new(string)
+		**out = **in
+	}
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
 		*out = new(string)
 		**out = **in
 	}
@@ -5651,6 +5691,11 @@ func (in *RuleGroupInitParameters) DeepCopyInto(out *RuleGroupInitParameters) {
 		*out = new(string)
 		**out = **in
 	}
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
+		*out = new(string)
+		**out = **in
+	}
 	if in.IntervalSeconds != nil {
 		in, out := &in.IntervalSeconds, &out.IntervalSeconds
 		*out = new(float64)
@@ -5799,6 +5844,11 @@ func (in *RuleGroupParameters) DeepCopyInto(out *RuleGroupParameters) {
 	}
 	if in.FolderUID != nil {
 		in, out := &in.FolderUID, &out.FolderUID
+		*out = new(string)
+		**out = **in
+	}
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
 		*out = new(string)
 		**out = **in
 	}

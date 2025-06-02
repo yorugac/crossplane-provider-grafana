@@ -83,6 +83,9 @@ spec:
                       (String) The email address of the Grafana user.
                       The email address of the Grafana user.
                     type: string
+                  id:
+                    description: (String) The ID of this resource.
+                    type: string
                   isAdmin:
                     description: |-
                       (Boolean) Whether to make user an admin. Defaults to false.
@@ -135,6 +138,9 @@ spec:
                     description: |-
                       (String) The email address of the Grafana user.
                       The email address of the Grafana user.
+                    type: string
+                  id:
+                    description: (String) The ID of this resource.
                     type: string
                   isAdmin:
                     description: |-

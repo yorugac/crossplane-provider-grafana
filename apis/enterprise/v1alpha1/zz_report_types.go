@@ -139,6 +139,7 @@ type ReportObservation struct {
 	Formats []*string `json:"formats,omitempty" tf:"formats,omitempty"`
 
 	// (String) Generated identifier of the report.
+	// Generated identifier of the report.
 	ID *string `json:"id,omitempty" tf:"id,omitempty"`
 
 	// (Boolean) Whether to include a link to the dashboard in the report. Defaults to true.

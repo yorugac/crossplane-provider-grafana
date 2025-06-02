@@ -31,6 +31,9 @@ type LibraryPanelInitParameters struct {
 	// +crossplane:generate:reference:selectorFieldName=FolderSelector
 	FolderUID *string `json:"folderUid,omitempty" tf:"folder_uid,omitempty"`
 
+	// (String) The ID of this resource.
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
+
 	// (String) The JSON model for the library panel.
 	// The JSON model for the library panel.
 	ModelJSON *string `json:"modelJson,omitempty" tf:"model_json,omitempty"`
@@ -135,6 +138,10 @@ type LibraryPanelParameters struct {
 	// +crossplane:generate:reference:selectorFieldName=FolderSelector
 	// +kubebuilder:validation:Optional
 	FolderUID *string `json:"folderUid,omitempty" tf:"folder_uid,omitempty"`
+
+	// (String) The ID of this resource.
+	// +kubebuilder:validation:Optional
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
 
 	// (String) The JSON model for the library panel.
 	// The JSON model for the library panel.

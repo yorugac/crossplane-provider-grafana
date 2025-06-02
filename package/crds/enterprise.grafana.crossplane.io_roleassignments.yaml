@@ -76,6 +76,9 @@ spec:
                 type: string
               forProvider:
                 properties:
+                  id:
+                    description: (String) The ID of this resource.
+                    type: string
                   orgId:
                     description: |-
                       (String) The Organization ID. If not set, the Org ID defined in the provider block will be used.
@@ -504,6 +507,9 @@ spec:
                   for example because of an external controller is managing them, like an
                   autoscaler.
                 properties:
+                  id:
+                    description: (String) The ID of this resource.
+                    type: string
                   orgId:
                     description: |-
                       (String) The Organization ID. If not set, the Org ID defined in the provider block will be used.

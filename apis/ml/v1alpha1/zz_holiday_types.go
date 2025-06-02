@@ -70,6 +70,7 @@ type HolidayObservation struct {
 	// A description of the holiday.
 	Description *string `json:"description,omitempty" tf:"description,omitempty"`
 
+	// The ID of the holiday.
 	ID *string `json:"id,omitempty" tf:"id,omitempty"`
 
 	// The timezone to use for events in the iCal file pointed to by ical_url.

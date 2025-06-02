@@ -53,8 +53,8 @@ type AppObservation struct {
 	// +mapType=granular
 	ExtraLogAttributes map[string]*string `json:"extraLogAttributes,omitempty" tf:"extra_log_attributes,omitempty"`
 
-	// generated from Frontend Observability API.
-	ID *string `json:"id,omitempty" tf:"id,omitempty"`
+	// generated from Frontend Observability API. This is auto-generated from Frontend Observability API.
+	ID *float64 `json:"id,omitempty" tf:"id,omitempty"`
 
 	// (String) The name of Frontend Observability App.
 	// The name of Frontend Observability App.

@@ -27,6 +27,9 @@ type InstallationInitParameters struct {
 	// The user to use for the installation.
 	GrafanaUser *string `json:"grafanaUser,omitempty" tf:"grafana_user,omitempty"`
 
+	// (String) The ID of this resource.
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
+
 	// (String) The identifier of the stack to install k6 on.
 	// The identifier of the stack to install k6 on.
 	StackID *string `json:"stackId,omitempty" tf:"stack_id,omitempty"`
@@ -66,6 +69,10 @@ type InstallationParameters struct {
 	// The user to use for the installation.
 	// +kubebuilder:validation:Optional
 	GrafanaUser *string `json:"grafanaUser,omitempty" tf:"grafana_user,omitempty"`
+
+	// (String) The ID of this resource.
+	// +kubebuilder:validation:Optional
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
 
 	// (String) The identifier of the stack to install k6 on.
 	// The identifier of the stack to install k6 on.

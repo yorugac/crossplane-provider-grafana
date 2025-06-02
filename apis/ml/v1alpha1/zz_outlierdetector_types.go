@@ -125,6 +125,7 @@ type OutlierDetectorObservation struct {
 	// A description of the outlier detector.
 	Description *string `json:"description,omitempty" tf:"description,omitempty"`
 
+	// The ID of the outlier detector.
 	ID *string `json:"id,omitempty" tf:"id,omitempty"`
 
 	// The data interval in seconds to monitor. Defaults to `300`.

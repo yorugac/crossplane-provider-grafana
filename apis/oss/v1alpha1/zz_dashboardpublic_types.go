@@ -39,6 +39,9 @@ type DashboardPublicInitParameters struct {
 	// +crossplane:generate:reference:selectorFieldName=DashboardSelector
 	DashboardUID *string `json:"dashboardUid,omitempty" tf:"dashboard_uid,omitempty"`
 
+	// (String) The ID of this resource.
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
+
 	// (Boolean) Set to true to enable the public dashboard. The default value is false.
 	// Set to `true` to enable the public dashboard. The default value is `false`.
 	IsEnabled *bool `json:"isEnabled,omitempty" tf:"is_enabled,omitempty"`
@@ -137,6 +140,10 @@ type DashboardPublicParameters struct {
 	// +crossplane:generate:reference:selectorFieldName=DashboardSelector
 	// +kubebuilder:validation:Optional
 	DashboardUID *string `json:"dashboardUid,omitempty" tf:"dashboard_uid,omitempty"`
+
+	// (String) The ID of this resource.
+	// +kubebuilder:validation:Optional
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
 
 	// (Boolean) Set to true to enable the public dashboard. The default value is false.
 	// Set to `true` to enable the public dashboard. The default value is `false`.

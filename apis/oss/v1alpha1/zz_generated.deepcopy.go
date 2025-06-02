@@ -58,6 +58,11 @@ func (in *AnnotationInitParameters) DeepCopyInto(out *AnnotationInitParameters) 
 		*out = new(string)
 		**out = **in
 	}
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
+		*out = new(string)
+		**out = **in
+	}
 	if in.OrgID != nil {
 		in, out := &in.OrgID, &out.OrgID
 		*out = new(string)
@@ -224,6 +229,11 @@ func (in *AnnotationParameters) DeepCopyInto(out *AnnotationParameters) {
 	}
 	if in.DashboardUID != nil {
 		in, out := &in.DashboardUID, &out.DashboardUID
+		*out = new(string)
+		**out = **in
+	}
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
 		*out = new(string)
 		**out = **in
 	}
@@ -436,6 +446,11 @@ func (in *DashboardInitParameters) DeepCopyInto(out *DashboardInitParameters) {
 		*out = new(v1.Selector)
 		(*in).DeepCopyInto(*out)
 	}
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
+		*out = new(string)
+		**out = **in
+	}
 	if in.Message != nil {
 		in, out := &in.Message, &out.Message
 		*out = new(string)
@@ -593,6 +608,11 @@ func (in *DashboardParameters) DeepCopyInto(out *DashboardParameters) {
 		*out = new(v1.Selector)
 		(*in).DeepCopyInto(*out)
 	}
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
+		*out = new(string)
+		**out = **in
+	}
 	if in.Message != nil {
 		in, out := &in.Message, &out.Message
 		*out = new(string)
@@ -672,6 +692,11 @@ func (in *DashboardPermissionInitParameters) DeepCopyInto(out *DashboardPermissi
 	}
 	if in.DashboardUID != nil {
 		in, out := &in.DashboardUID, &out.DashboardUID
+		*out = new(string)
+		**out = **in
+	}
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
 		*out = new(string)
 		**out = **in
 	}
@@ -1050,6 +1075,11 @@ func (in *DashboardPermissionParameters) DeepCopyInto(out *DashboardPermissionPa
 		*out = new(string)
 		**out = **in
 	}
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
+		*out = new(string)
+		**out = **in
+	}
 	if in.OrgID != nil {
 		in, out := &in.OrgID, &out.OrgID
 		*out = new(string)
@@ -1171,6 +1201,11 @@ func (in *DashboardPublicInitParameters) DeepCopyInto(out *DashboardPublicInitPa
 	}
 	if in.DashboardUID != nil {
 		in, out := &in.DashboardUID, &out.DashboardUID
+		*out = new(string)
+		**out = **in
+	}
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
 		*out = new(string)
 		**out = **in
 	}
@@ -1338,6 +1373,11 @@ func (in *DashboardPublicParameters) DeepCopyInto(out *DashboardPublicParameters
 	}
 	if in.DashboardUID != nil {
 		in, out := &in.DashboardUID, &out.DashboardUID
+		*out = new(string)
+		**out = **in
+	}
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
 		*out = new(string)
 		**out = **in
 	}
@@ -1531,6 +1571,11 @@ func (in *DataSourceConfigInitParameters) DeepCopyInto(out *DataSourceConfigInit
 			(*out)[key] = outVal
 		}
 	}
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
+		*out = new(string)
+		**out = **in
+	}
 	if in.JSONDataEncoded != nil {
 		in, out := &in.JSONDataEncoded, &out.JSONDataEncoded
 		*out = new(string)
@@ -1648,6 +1693,11 @@ func (in *DataSourceConfigParameters) DeepCopyInto(out *DataSourceConfigParamete
 		*out = new(v1.SecretReference)
 		**out = **in
 	}
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
+		*out = new(string)
+		**out = **in
+	}
 	if in.JSONDataEncoded != nil {
 		in, out := &in.JSONDataEncoded, &out.JSONDataEncoded
 		*out = new(string)
@@ -1763,6 +1813,11 @@ func (in *DataSourceInitParameters) DeepCopyInto(out *DataSourceInitParameters) 
 			}
 			(*out)[key] = outVal
 		}
+	}
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
+		*out = new(string)
+		**out = **in
 	}
 	if in.IsDefault != nil {
 		in, out := &in.IsDefault, &out.IsDefault
@@ -1981,6 +2036,11 @@ func (in *DataSourceParameters) DeepCopyInto(out *DataSourceParameters) {
 		*out = new(v1.SecretReference)
 		**out = **in
 	}
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
+		*out = new(string)
+		**out = **in
+	}
 	if in.IsDefault != nil {
 		in, out := &in.IsDefault, &out.IsDefault
 		*out = new(bool)
@@ -2128,6 +2188,11 @@ func (in *FolderInitParameters) DeepCopyInto(out *FolderInitParameters) {
 		*out = new(v1.Selector)
 		(*in).DeepCopyInto(*out)
 	}
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
+		*out = new(string)
+		**out = **in
+	}
 	if in.OrgID != nil {
 		in, out := &in.OrgID, &out.OrgID
 		*out = new(string)
@@ -2270,6 +2335,11 @@ func (in *FolderParameters) DeepCopyInto(out *FolderParameters) {
 		*out = new(v1.Selector)
 		(*in).DeepCopyInto(*out)
 	}
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
+		*out = new(string)
+		**out = **in
+	}
 	if in.OrgID != nil {
 		in, out := &in.OrgID, &out.OrgID
 		*out = new(string)
@@ -2359,6 +2429,11 @@ func (in *FolderPermissionInitParameters) DeepCopyInto(out *FolderPermissionInit
 	}
 	if in.FolderUID != nil {
 		in, out := &in.FolderUID, &out.FolderUID
+		*out = new(string)
+		**out = **in
+	}
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
 		*out = new(string)
 		**out = **in
 	}
@@ -2734,6 +2809,11 @@ func (in *FolderPermissionParameters) DeepCopyInto(out *FolderPermissionParamete
 	}
 	if in.FolderUID != nil {
 		in, out := &in.FolderUID, &out.FolderUID
+		*out = new(string)
+		**out = **in
+	}
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
 		*out = new(string)
 		**out = **in
 	}
@@ -3357,6 +3437,11 @@ func (in *LibraryPanelInitParameters) DeepCopyInto(out *LibraryPanelInitParamete
 		*out = new(string)
 		**out = **in
 	}
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
+		*out = new(string)
+		**out = **in
+	}
 	if in.ModelJSON != nil {
 		in, out := &in.ModelJSON, &out.ModelJSON
 		*out = new(string)
@@ -3537,6 +3622,11 @@ func (in *LibraryPanelParameters) DeepCopyInto(out *LibraryPanelParameters) {
 	}
 	if in.FolderUID != nil {
 		in, out := &in.FolderUID, &out.FolderUID
+		*out = new(string)
+		**out = **in
+	}
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
 		*out = new(string)
 		**out = **in
 	}
@@ -4352,6 +4442,11 @@ func (in *OrganizationInitParameters) DeepCopyInto(out *OrganizationInitParamete
 			}
 		}
 	}
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
+		*out = new(string)
+		**out = **in
+	}
 	if in.Name != nil {
 		in, out := &in.Name, &out.Name
 		*out = new(string)
@@ -4542,6 +4637,11 @@ func (in *OrganizationParameters) DeepCopyInto(out *OrganizationParameters) {
 			}
 		}
 	}
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
+		*out = new(string)
+		**out = **in
+	}
 	if in.Name != nil {
 		in, out := &in.Name, &out.Name
 		*out = new(string)
@@ -4613,6 +4713,11 @@ func (in *OrganizationPreferencesInitParameters) DeepCopyInto(out *OrganizationP
 	*out = *in
 	if in.HomeDashboardUID != nil {
 		in, out := &in.HomeDashboardUID, &out.HomeDashboardUID
+		*out = new(string)
+		**out = **in
+	}
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
 		*out = new(string)
 		**out = **in
 	}
@@ -4740,6 +4845,11 @@ func (in *OrganizationPreferencesParameters) DeepCopyInto(out *OrganizationPrefe
 	*out = *in
 	if in.HomeDashboardUID != nil {
 		in, out := &in.HomeDashboardUID, &out.HomeDashboardUID
+		*out = new(string)
+		**out = **in
+	}
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
 		*out = new(string)
 		**out = **in
 	}
@@ -5030,6 +5140,11 @@ func (in *Playlist) DeepCopyObject() runtime.Object {
 // DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
 func (in *PlaylistInitParameters) DeepCopyInto(out *PlaylistInitParameters) {
 	*out = *in
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
+		*out = new(string)
+		**out = **in
+	}
 	if in.Interval != nil {
 		in, out := &in.Interval, &out.Interval
 		*out = new(string)
@@ -5151,6 +5266,11 @@ func (in *PlaylistObservation) DeepCopy() *PlaylistObservation {
 // DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
 func (in *PlaylistParameters) DeepCopyInto(out *PlaylistParameters) {
 	*out = *in
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
+		*out = new(string)
+		**out = **in
+	}
 	if in.Interval != nil {
 		in, out := &in.Interval, &out.Interval
 		*out = new(string)
@@ -6441,6 +6561,11 @@ func (in *ServiceAccount) DeepCopyObject() runtime.Object {
 // DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
 func (in *ServiceAccountInitParameters) DeepCopyInto(out *ServiceAccountInitParameters) {
 	*out = *in
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
+		*out = new(string)
+		**out = **in
+	}
 	if in.IsDisabled != nil {
 		in, out := &in.IsDisabled, &out.IsDisabled
 		*out = new(bool)
@@ -6558,6 +6683,11 @@ func (in *ServiceAccountObservation) DeepCopy() *ServiceAccountObservation {
 // DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
 func (in *ServiceAccountParameters) DeepCopyInto(out *ServiceAccountParameters) {
 	*out = *in
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
+		*out = new(string)
+		**out = **in
+	}
 	if in.IsDisabled != nil {
 		in, out := &in.IsDisabled, &out.IsDisabled
 		*out = new(bool)
@@ -6630,6 +6760,11 @@ func (in *ServiceAccountPermission) DeepCopyObject() runtime.Object {
 // DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
 func (in *ServiceAccountPermissionInitParameters) DeepCopyInto(out *ServiceAccountPermissionInitParameters) {
 	*out = *in
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
+		*out = new(string)
+		**out = **in
+	}
 	if in.OrgID != nil {
 		in, out := &in.OrgID, &out.OrgID
 		*out = new(string)
@@ -6990,6 +7125,11 @@ func (in *ServiceAccountPermissionObservation) DeepCopy() *ServiceAccountPermiss
 // DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
 func (in *ServiceAccountPermissionParameters) DeepCopyInto(out *ServiceAccountPermissionParameters) {
 	*out = *in
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
+		*out = new(string)
+		**out = **in
+	}
 	if in.OrgID != nil {
 		in, out := &in.OrgID, &out.OrgID
 		*out = new(string)
@@ -7269,6 +7409,11 @@ func (in *ServiceAccountToken) DeepCopyObject() runtime.Object {
 // DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
 func (in *ServiceAccountTokenInitParameters) DeepCopyInto(out *ServiceAccountTokenInitParameters) {
 	*out = *in
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
+		*out = new(string)
+		**out = **in
+	}
 	if in.Name != nil {
 		in, out := &in.Name, &out.Name
 		*out = new(string)
@@ -7386,6 +7531,11 @@ func (in *ServiceAccountTokenObservation) DeepCopy() *ServiceAccountTokenObserva
 // DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
 func (in *ServiceAccountTokenParameters) DeepCopyInto(out *ServiceAccountTokenParameters) {
 	*out = *in
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
+		*out = new(string)
+		**out = **in
+	}
 	if in.Name != nil {
 		in, out := &in.Name, &out.Name
 		*out = new(string)
@@ -7488,6 +7638,11 @@ func (in *SsoSettings) DeepCopyObject() runtime.Object {
 // DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
 func (in *SsoSettingsInitParameters) DeepCopyInto(out *SsoSettingsInitParameters) {
 	*out = *in
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
+		*out = new(string)
+		**out = **in
+	}
 	if in.LdapSettings != nil {
 		in, out := &in.LdapSettings, &out.LdapSettings
 		*out = make([]LdapSettingsInitParameters, len(*in))
@@ -7607,6 +7762,11 @@ func (in *SsoSettingsObservation) DeepCopy() *SsoSettingsObservation {
 // DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
 func (in *SsoSettingsParameters) DeepCopyInto(out *SsoSettingsParameters) {
 	*out = *in
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
+		*out = new(string)
+		**out = **in
+	}
 	if in.LdapSettings != nil {
 		in, out := &in.LdapSettings, &out.LdapSettings
 		*out = make([]LdapSettingsParameters, len(*in))
@@ -7712,6 +7872,11 @@ func (in *TeamInitParameters) DeepCopyInto(out *TeamInitParameters) {
 	*out = *in
 	if in.Email != nil {
 		in, out := &in.Email, &out.Email
+		*out = new(string)
+		**out = **in
+	}
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
 		*out = new(string)
 		**out = **in
 	}
@@ -7901,6 +8066,11 @@ func (in *TeamParameters) DeepCopyInto(out *TeamParameters) {
 	*out = *in
 	if in.Email != nil {
 		in, out := &in.Email, &out.Email
+		*out = new(string)
+		**out = **in
+	}
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
 		*out = new(string)
 		**out = **in
 	}
@@ -8126,6 +8296,11 @@ func (in *UserInitParameters) DeepCopyInto(out *UserInitParameters) {
 		*out = new(string)
 		**out = **in
 	}
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
+		*out = new(string)
+		**out = **in
+	}
 	if in.IsAdmin != nil {
 		in, out := &in.IsAdmin, &out.IsAdmin
 		*out = new(bool)
@@ -8236,6 +8411,11 @@ func (in *UserParameters) DeepCopyInto(out *UserParameters) {
 	*out = *in
 	if in.Email != nil {
 		in, out := &in.Email, &out.Email
+		*out = new(string)
+		**out = **in
+	}
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
 		*out = new(string)
 		**out = **in
 	}

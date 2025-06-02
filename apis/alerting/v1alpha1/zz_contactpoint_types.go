@@ -106,6 +106,9 @@ type ContactPointInitParameters struct {
 	// A contact point that sends notifications to Google Chat.
 	Googlechat []GooglechatInitParameters `json:"googlechat,omitempty" tf:"googlechat,omitempty"`
 
+	// (String) The ID of this resource.
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
+
 	// (Block Set) A contact point that publishes notifications to Apache Kafka topics. (see below for nested schema)
 	// A contact point that publishes notifications to Apache Kafka topics.
 	Kafka []KafkaInitParameters `json:"kafka,omitempty" tf:"kafka,omitempty"`
@@ -321,6 +324,10 @@ type ContactPointParameters struct {
 	// A contact point that sends notifications to Google Chat.
 	// +kubebuilder:validation:Optional
 	Googlechat []GooglechatParameters `json:"googlechat,omitempty" tf:"googlechat,omitempty"`
+
+	// (String) The ID of this resource.
+	// +kubebuilder:validation:Optional
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
 
 	// (Block Set) A contact point that publishes notifications to Apache Kafka topics. (see below for nested schema)
 	// A contact point that publishes notifications to Apache Kafka topics.

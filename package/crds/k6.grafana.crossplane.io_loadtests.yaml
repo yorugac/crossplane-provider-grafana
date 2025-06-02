@@ -324,8 +324,10 @@ spec:
                       The date when the load test was created.
                     type: string
                   id:
-                    description: (Number) Numeric identifier of the load test.
-                    type: string
+                    description: |-
+                      (Number) Numeric identifier of the load test.
+                      Numeric identifier of the load test.
+                    type: number
                   name:
                     description: |-
                       friendly identifier of the load test.

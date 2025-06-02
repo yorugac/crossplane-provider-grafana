@@ -164,6 +164,9 @@ spec:
                       (String) The unique identifier of the original dashboard.
                       The unique identifier of the original dashboard.
                     type: string
+                  id:
+                    description: (String) The ID of this resource.
+                    type: string
                   isEnabled:
                     description: |-
                       (Boolean) Set to true to enable the public dashboard. The default value is false.
@@ -365,6 +368,9 @@ spec:
                     description: |-
                       (String) The unique identifier of the original dashboard.
                       The unique identifier of the original dashboard.
+                    type: string
+                  id:
+                    description: (String) The ID of this resource.
                     type: string
                   isEnabled:
                     description: |-

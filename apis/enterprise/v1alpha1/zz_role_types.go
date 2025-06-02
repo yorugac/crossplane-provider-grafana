@@ -39,6 +39,9 @@ type RoleInitParameters struct {
 	// Boolean to state whether the role should be visible in the Grafana UI or not. Available with Grafana 8.5+. Defaults to `false`.
 	Hidden *bool `json:"hidden,omitempty" tf:"hidden,omitempty"`
 
+	// (String) The ID of this resource.
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
+
 	// (String) Name of the role
 	// Name of the role
 	Name *string `json:"name,omitempty" tf:"name,omitempty"`
@@ -152,6 +155,10 @@ type RoleParameters struct {
 	// Boolean to state whether the role should be visible in the Grafana UI or not. Available with Grafana 8.5+. Defaults to `false`.
 	// +kubebuilder:validation:Optional
 	Hidden *bool `json:"hidden,omitempty" tf:"hidden,omitempty"`
+
+	// (String) The ID of this resource.
+	// +kubebuilder:validation:Optional
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
 
 	// (String) Name of the role
 	// Name of the role

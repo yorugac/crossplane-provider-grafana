@@ -35,7 +35,7 @@ type AwsAccountInitParameters struct {
 
 type AwsAccountObservation struct {
 
-	// This has the format "{{ stack_id }}:{{ resource_id }}".
+	// This has the format "{{ stack_id }}:{{ resource_id }}". This has the format "{{ stack_id }}:{{ resource_id }}".
 	ID *string `json:"id,omitempty" tf:"id,omitempty"`
 
 	// readable name for this AWS Account resource.

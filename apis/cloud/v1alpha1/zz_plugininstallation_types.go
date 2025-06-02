@@ -23,6 +23,9 @@ type PluginInstallationInitParameters struct {
 	// +kubebuilder:validation:Optional
 	CloudStackSelector *v1.Selector `json:"cloudStackSelector,omitempty" tf:"-"`
 
+	// (String) The ID of this resource.
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
+
 	// (String) Slug of the plugin to be installed.
 	// Slug of the plugin to be installed.
 	Slug *string `json:"slug,omitempty" tf:"slug,omitempty"`
@@ -67,6 +70,10 @@ type PluginInstallationParameters struct {
 	// Selector for a Stack in cloud to populate stackSlug.
 	// +kubebuilder:validation:Optional
 	CloudStackSelector *v1.Selector `json:"cloudStackSelector,omitempty" tf:"-"`
+
+	// (String) The ID of this resource.
+	// +kubebuilder:validation:Optional
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
 
 	// (String) Slug of the plugin to be installed.
 	// Slug of the plugin to be installed.

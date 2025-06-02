@@ -153,6 +153,9 @@ spec:
                       (String) Unique ID (UID) of the folder containing the library panel.
                       Unique ID (UID) of the folder containing the library panel.
                     type: string
+                  id:
+                    description: (String) The ID of this resource.
+                    type: string
                   modelJson:
                     description: |-
                       (String) The JSON model for the library panel.
@@ -339,6 +342,9 @@ spec:
                     description: |-
                       (String) Unique ID (UID) of the folder containing the library panel.
                       Unique ID (UID) of the folder containing the library panel.
+                    type: string
+                  id:
+                    description: (String) The ID of this resource.
                     type: string
                   modelJson:
                     description: |-

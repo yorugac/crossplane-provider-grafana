@@ -19,6 +19,9 @@ type ScheduleInitParameters struct {
 	// Enable overrides via web UI (it will ignore ical_url_overrides).
 	EnableWebOverrides *bool `json:"enableWebOverrides,omitempty" tf:"enable_web_overrides,omitempty"`
 
+	// (String) The ID of this resource.
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
+
 	// (String) The URL of external iCal calendar which override primary events.
 	// The URL of external iCal calendar which override primary events.
 	IcalURLOverrides *string `json:"icalUrlOverrides,omitempty" tf:"ical_url_overrides,omitempty"`
@@ -113,6 +116,10 @@ type ScheduleParameters struct {
 	// Enable overrides via web UI (it will ignore ical_url_overrides).
 	// +kubebuilder:validation:Optional
 	EnableWebOverrides *bool `json:"enableWebOverrides,omitempty" tf:"enable_web_overrides,omitempty"`
+
+	// (String) The ID of this resource.
+	// +kubebuilder:validation:Optional
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
 
 	// (String) The URL of external iCal calendar which override primary events.
 	// The URL of external iCal calendar which override primary events.

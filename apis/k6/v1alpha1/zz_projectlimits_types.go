@@ -43,7 +43,8 @@ type ProjectLimitsObservation struct {
 	DurationMaxPerTest *float64 `json:"durationMaxPerTest,omitempty" tf:"duration_max_per_test,omitempty"`
 
 	// (Number) The identifier of the project limits. This is the same as the project_id.
-	ID *string `json:"id,omitempty" tf:"id,omitempty"`
+	// The identifier of the project limits. This is the same as the project_id.
+	ID *float64 `json:"id,omitempty" tf:"id,omitempty"`
 
 	// (Number) The identifier of the project to manage limits for.
 	// The identifier of the project to manage limits for.

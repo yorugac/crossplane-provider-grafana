@@ -53,6 +53,9 @@ type EscalationInitParameters struct {
 	// The ID of a User Group for notify_user_group type step.
 	GroupToNotify *string `json:"groupToNotify,omitempty" tf:"group_to_notify,omitempty"`
 
+	// (String) The ID of this resource.
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
+
 	// (Boolean) Will activate "important" personal notification rules. Actual for steps: notify_persons, notify_person_next_each_time, notify_on_call_from_schedule, notify_user_group and notify_team_members
 	// Will activate "important" personal notification rules. Actual for steps: notify_persons, notify_person_next_each_time, notify_on_call_from_schedule, notify_user_group and notify_team_members
 	Important *bool `json:"important,omitempty" tf:"important,omitempty"`
@@ -214,6 +217,10 @@ type EscalationParameters struct {
 	// The ID of a User Group for notify_user_group type step.
 	// +kubebuilder:validation:Optional
 	GroupToNotify *string `json:"groupToNotify,omitempty" tf:"group_to_notify,omitempty"`
+
+	// (String) The ID of this resource.
+	// +kubebuilder:validation:Optional
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
 
 	// (Boolean) Will activate "important" personal notification rules. Actual for steps: notify_persons, notify_person_next_each_time, notify_on_call_from_schedule, notify_user_group and notify_team_members
 	// Will activate "important" personal notification rules. Actual for steps: notify_persons, notify_person_next_each_time, notify_on_call_from_schedule, notify_user_group and notify_team_members

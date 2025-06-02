@@ -38,6 +38,9 @@ type OnCallShiftInitParameters struct {
 	// The frequency of the event. Can be hourly, daily, weekly, monthly
 	Frequency *string `json:"frequency,omitempty" tf:"frequency,omitempty"`
 
+	// (String) The ID of this resource.
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
+
 	// (Number) The positive integer representing at which intervals the recurrence rule repeats.
 	// The positive integer representing at which intervals the recurrence rule repeats.
 	Interval *float64 `json:"interval,omitempty" tf:"interval,omitempty"`
@@ -195,6 +198,10 @@ type OnCallShiftParameters struct {
 	// The frequency of the event. Can be hourly, daily, weekly, monthly
 	// +kubebuilder:validation:Optional
 	Frequency *string `json:"frequency,omitempty" tf:"frequency,omitempty"`
+
+	// (String) The ID of this resource.
+	// +kubebuilder:validation:Optional
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
 
 	// (Number) The positive integer representing at which intervals the recurrence rule repeats.
 	// The positive integer representing at which intervals the recurrence rule repeats.

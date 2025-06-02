@@ -15,6 +15,9 @@ import (
 
 type EscalationChainInitParameters struct {
 
+	// (String) The ID of this resource.
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
+
 	// (String) The name of the escalation chain.
 	// The name of the escalation chain.
 	Name *string `json:"name,omitempty" tf:"name,omitempty"`
@@ -39,6 +42,10 @@ type EscalationChainObservation struct {
 }
 
 type EscalationChainParameters struct {
+
+	// (String) The ID of this resource.
+	// +kubebuilder:validation:Optional
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
 
 	// (String) The name of the escalation chain.
 	// The name of the escalation chain.

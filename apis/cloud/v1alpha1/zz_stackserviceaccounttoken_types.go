@@ -23,6 +23,9 @@ type StackServiceAccountTokenInitParameters struct {
 	// +kubebuilder:validation:Optional
 	CloudStackSelector *v1.Selector `json:"cloudStackSelector,omitempty" tf:"-"`
 
+	// (String) The ID of this resource.
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
+
 	// (String)
 	Name *string `json:"name,omitempty" tf:"name,omitempty"`
 
@@ -84,6 +87,10 @@ type StackServiceAccountTokenParameters struct {
 	// Selector for a Stack in cloud to populate stackSlug.
 	// +kubebuilder:validation:Optional
 	CloudStackSelector *v1.Selector `json:"cloudStackSelector,omitempty" tf:"-"`
+
+	// (String) The ID of this resource.
+	// +kubebuilder:validation:Optional
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
 
 	// (String)
 	// +kubebuilder:validation:Optional

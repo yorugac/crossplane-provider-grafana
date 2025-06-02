@@ -321,9 +321,10 @@ spec:
                       Maximum duration of a test in seconds.
                     type: number
                   id:
-                    description: (Number) The identifier of the project limits. This
-                      is the same as the project_id.
-                    type: string
+                    description: |-
+                      (Number) The identifier of the project limits. This is the same as the project_id.
+                      The identifier of the project limits. This is the same as the project_id.
+                    type: number
                   projectId:
                     description: |-
                       (Number) The identifier of the project to manage limits for.

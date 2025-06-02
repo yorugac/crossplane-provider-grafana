@@ -49,6 +49,11 @@ func (in *InstallationInitParameters) DeepCopyInto(out *InstallationInitParamete
 		*out = new(string)
 		**out = **in
 	}
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
+		*out = new(string)
+		**out = **in
+	}
 	if in.StackID != nil {
 		in, out := &in.StackID, &out.StackID
 		*out = new(string)
@@ -140,6 +145,11 @@ func (in *InstallationParameters) DeepCopyInto(out *InstallationParameters) {
 	out.GrafanaSaTokenSecretRef = in.GrafanaSaTokenSecretRef
 	if in.GrafanaUser != nil {
 		in, out := &in.GrafanaUser, &out.GrafanaUser
+		*out = new(string)
+		**out = **in
+	}
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
 		*out = new(string)
 		**out = **in
 	}
@@ -304,7 +314,7 @@ func (in *LoadTestObservation) DeepCopyInto(out *LoadTestObservation) {
 	}
 	if in.ID != nil {
 		in, out := &in.ID, &out.ID
-		*out = new(string)
+		*out = new(float64)
 		**out = **in
 	}
 	if in.Name != nil {
@@ -565,7 +575,7 @@ func (in *ProjectLimitsObservation) DeepCopyInto(out *ProjectLimitsObservation) 
 	}
 	if in.ID != nil {
 		in, out := &in.ID, &out.ID
-		*out = new(string)
+		*out = new(float64)
 		**out = **in
 	}
 	if in.ProjectID != nil {
@@ -722,7 +732,7 @@ func (in *ProjectObservation) DeepCopyInto(out *ProjectObservation) {
 	}
 	if in.ID != nil {
 		in, out := &in.ID, &out.ID
-		*out = new(string)
+		*out = new(float64)
 		**out = **in
 	}
 	if in.IsDefault != nil {

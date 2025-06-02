@@ -20,6 +20,9 @@ type TeamExternalGroupInitParameters struct {
 	// +listType=set
 	Groups []*string `json:"groups,omitempty" tf:"groups,omitempty"`
 
+	// (String) The ID of this resource.
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
+
 	// (String) The Team ID
 	// The Team ID
 	// +crossplane:generate:reference:type=github.com/grafana/crossplane-provider-grafana/apis/oss/v1alpha1.Team
@@ -58,6 +61,10 @@ type TeamExternalGroupParameters struct {
 	// +kubebuilder:validation:Optional
 	// +listType=set
 	Groups []*string `json:"groups,omitempty" tf:"groups,omitempty"`
+
+	// (String) The ID of this resource.
+	// +kubebuilder:validation:Optional
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
 
 	// (String) The Team ID
 	// The Team ID

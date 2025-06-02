@@ -536,6 +536,9 @@ type SLOInitParameters struct {
 	// UID for the SLO folder
 	FolderUID *string `json:"folderUid,omitempty" tf:"folder_uid,omitempty"`
 
+	// (String) The ID of this resource.
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
+
 	// "^[a-zA-Z_][a-zA-Z0-9_]*$" (see below for nested schema)
 	// Additional labels that will be attached to all metrics generated from the query. These labels are useful for grouping SLOs in dashboard views that you create by hand. Labels must adhere to Prometheus label name schema - "^[a-zA-Z_][a-zA-Z0-9_]*$"
 	Label []SLOLabelInitParameters `json:"label,omitempty" tf:"label,omitempty"`
@@ -667,6 +670,10 @@ type SLOParameters struct {
 	// UID for the SLO folder
 	// +kubebuilder:validation:Optional
 	FolderUID *string `json:"folderUid,omitempty" tf:"folder_uid,omitempty"`
+
+	// (String) The ID of this resource.
+	// +kubebuilder:validation:Optional
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
 
 	// "^[a-zA-Z_][a-zA-Z0-9_]*$" (see below for nested schema)
 	// Additional labels that will be attached to all metrics generated from the query. These labels are useful for grouping SLOs in dashboard views that you create by hand. Labels must adhere to Prometheus label name schema - "^[a-zA-Z_][a-zA-Z0-9_]*$"

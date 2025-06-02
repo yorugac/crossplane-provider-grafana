@@ -158,6 +158,9 @@ spec:
                             type: string
                         type: object
                     type: object
+                  id:
+                    description: (String) The ID of this resource.
+                    type: string
                   message:
                     description: |-
                       (String) Set a commit message for the version history.
@@ -345,6 +348,9 @@ spec:
                             type: string
                         type: object
                     type: object
+                  id:
+                    description: (String) The ID of this resource.
+                    type: string
                   message:
                     description: |-
                       (String) Set a commit message for the version history.

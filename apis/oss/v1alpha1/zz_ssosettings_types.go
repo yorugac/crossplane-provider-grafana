@@ -1468,6 +1468,9 @@ type ServersParameters struct {
 
 type SsoSettingsInitParameters struct {
 
+	// (String) The ID of this resource.
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
+
 	// (Block Set, Max: 1) The LDAP settings set. Required for the ldap provider. (see below for nested schema)
 	// The LDAP settings set. Required for the ldap provider.
 	LdapSettings []LdapSettingsInitParameters `json:"ldapSettings,omitempty" tf:"ldap_settings,omitempty"`
@@ -1508,6 +1511,10 @@ type SsoSettingsObservation struct {
 }
 
 type SsoSettingsParameters struct {
+
+	// (String) The ID of this resource.
+	// +kubebuilder:validation:Optional
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
 
 	// (Block Set, Max: 1) The LDAP settings set. Required for the ldap provider. (see below for nested schema)
 	// The LDAP settings set. Required for the ldap provider.

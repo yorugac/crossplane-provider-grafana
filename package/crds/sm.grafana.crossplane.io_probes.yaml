@@ -377,7 +377,9 @@ spec:
                       Disables scripted checks for this probe. Defaults to `false`.
                     type: boolean
                   id:
-                    description: (String) The ID of the probe.
+                    description: |-
+                      (String) The ID of the probe.
+                      The ID of the probe.
                     type: string
                   labels:
                     additionalProperties:

@@ -320,7 +320,7 @@ spec:
                 properties:
                   id:
                     description: This has the format "{{ stack_id }}:{{ resource_id
-                      }}".
+                      }}". This has the format "{{ stack_id }}:{{ resource_id }}".
                     type: string
                   name:
                     description: |-

@@ -30,6 +30,9 @@ type RouteInitParameters struct {
 	// +kubebuilder:validation:Optional
 	EscalationChainSelector *v1.Selector `json:"escalationChainSelector,omitempty" tf:"-"`
 
+	// (String) The ID of this resource.
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
+
 	// (String) The ID of the integration.
 	// The ID of the integration.
 	// +crossplane:generate:reference:type=github.com/grafana/crossplane-provider-grafana/apis/oncall/v1alpha1.Integration
@@ -160,6 +163,10 @@ type RouteParameters struct {
 	// Selector for a EscalationChain in oncall to populate escalationChainId.
 	// +kubebuilder:validation:Optional
 	EscalationChainSelector *v1.Selector `json:"escalationChainSelector,omitempty" tf:"-"`
+
+	// (String) The ID of this resource.
+	// +kubebuilder:validation:Optional
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
 
 	// (String) The ID of the integration.
 	// The ID of the integration.

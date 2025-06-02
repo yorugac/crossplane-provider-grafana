@@ -66,7 +66,7 @@ type MetricsEndpointScrapeJobObservation struct {
 	// Whether the metrics endpoint scrape job is enabled or not.
 	Enabled *bool `json:"enabled,omitempty" tf:"enabled,omitempty"`
 
-	// This has the format "{{ stack_id }}:{{ name }}".
+	// This has the format "{{ stack_id }}:{{ name }}". This has the format "{{ stack_id }}:{{ name }}".
 	ID *string `json:"id,omitempty" tf:"id,omitempty"`
 
 	// (String) The name of the metrics endpoint scrape job.

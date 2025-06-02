@@ -110,6 +110,9 @@ spec:
                     - name
                     - namespace
                     type: object
+                  id:
+                    description: (String) The ID of this resource.
+                    type: string
                   isDefault:
                     description: |-
                       (Boolean) Whether to set the data source as default. This should only be true to a single data source. Defaults to false.
@@ -286,6 +289,9 @@ spec:
                     additionalProperties:
                       type: string
                     type: object
+                  id:
+                    description: (String) The ID of this resource.
+                    type: string
                   isDefault:
                     description: |-
                       (Boolean) Whether to set the data source as default. This should only be true to a single data source. Defaults to false.

@@ -107,6 +107,9 @@ spec:
                       (String) The frequency of the event. Can be hourly, daily, weekly, monthly
                       The frequency of the event. Can be hourly, daily, weekly, monthly
                     type: string
+                  id:
+                    description: (String) The ID of this resource.
+                    type: string
                   interval:
                     description: |-
                       (Number) The positive integer representing at which intervals the recurrence rule repeats.
@@ -221,6 +224,9 @@ spec:
                     description: |-
                       (String) The frequency of the event. Can be hourly, daily, weekly, monthly
                       The frequency of the event. Can be hourly, daily, weekly, monthly
+                    type: string
+                  id:
+                    description: (String) The ID of this resource.
                     type: string
                   interval:
                     description: |-

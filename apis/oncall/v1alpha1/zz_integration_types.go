@@ -140,6 +140,9 @@ type IntegrationInitParameters struct {
 	// The Default route for all alerts from the given integration
 	DefaultRoute []DefaultRouteInitParameters `json:"defaultRoute,omitempty" tf:"default_route,omitempty"`
 
+	// (String) The ID of this resource.
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
+
 	// to-string mappings. Each map must include one key named "key" and one key named "value".
 	// A list of string-to-string mappings. Each map must include one key named "key" and one key named "value".
 	Labels []map[string]*string `json:"labels,omitempty" tf:"labels,omitempty"`
@@ -201,6 +204,10 @@ type IntegrationParameters struct {
 	// The Default route for all alerts from the given integration
 	// +kubebuilder:validation:Optional
 	DefaultRoute []DefaultRouteParameters `json:"defaultRoute,omitempty" tf:"default_route,omitempty"`
+
+	// (String) The ID of this resource.
+	// +kubebuilder:validation:Optional
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
 
 	// to-string mappings. Each map must include one key named "key" and one key named "value".
 	// A list of string-to-string mappings. Each map must include one key named "key" and one key named "value".

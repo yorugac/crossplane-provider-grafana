@@ -104,6 +104,9 @@ spec:
                       (Boolean) Boolean to state whether the role should be visible in the Grafana UI or not. Available with Grafana 8.5+. Defaults to false.
                       Boolean to state whether the role should be visible in the Grafana UI or not. Available with Grafana 8.5+. Defaults to `false`.
                     type: boolean
+                  id:
+                    description: (String) The ID of this resource.
+                    type: string
                   name:
                     description: |-
                       (String) Name of the role
@@ -260,6 +263,9 @@ spec:
                       (Boolean) Boolean to state whether the role should be visible in the Grafana UI or not. Available with Grafana 8.5+. Defaults to false.
                       Boolean to state whether the role should be visible in the Grafana UI or not. Available with Grafana 8.5+. Defaults to `false`.
                     type: boolean
+                  id:
+                    description: (String) The ID of this resource.
+                    type: string
                   name:
                     description: |-
                       (String) Name of the role

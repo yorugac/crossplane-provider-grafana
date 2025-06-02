@@ -326,7 +326,9 @@ spec:
                       Whether the pipeline is enabled for collectors
                     type: boolean
                   id:
-                    description: assigned ID of the pipeline
+                    description: |-
+                      assigned ID of the pipeline
+                      Server-assigned ID of the pipeline
                     type: string
                   matchers:
                     description: |-

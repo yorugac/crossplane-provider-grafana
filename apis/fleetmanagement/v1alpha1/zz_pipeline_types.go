@@ -43,6 +43,7 @@ type PipelineObservation struct {
 	Enabled *bool `json:"enabled,omitempty" tf:"enabled,omitempty"`
 
 	// assigned ID of the pipeline
+	// Server-assigned ID of the pipeline
 	ID *string `json:"id,omitempty" tf:"id,omitempty"`
 
 	// (List of String) Used to match against collectors and assign pipelines to them; follows the syntax of Prometheus Alertmanager matchers

@@ -60,6 +60,7 @@ type ProbeObservation struct {
 	DisableScriptedChecks *bool `json:"disableScriptedChecks,omitempty" tf:"disable_scripted_checks,omitempty"`
 
 	// (String) The ID of the probe.
+	// The ID of the probe.
 	ID *string `json:"id,omitempty" tf:"id,omitempty"`
 
 	// (Map of String) Custom labels to be included with collected metrics and logs.

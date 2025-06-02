@@ -367,8 +367,9 @@ spec:
                     type: object
                     x-kubernetes-map-type: granular
                   id:
-                    description: generated from Frontend Observability API.
-                    type: string
+                    description: generated from Frontend Observability API. This is
+                      auto-generated from Frontend Observability API.
+                    type: number
                   name:
                     description: |-
                       (String) The name of Frontend Observability App.

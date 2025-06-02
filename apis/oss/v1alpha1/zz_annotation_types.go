@@ -31,6 +31,9 @@ type AnnotationInitParameters struct {
 	// +crossplane:generate:reference:selectorFieldName=DashboardSelector
 	DashboardUID *string `json:"dashboardUid,omitempty" tf:"dashboard_uid,omitempty"`
 
+	// (String) The ID of this resource.
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
+
 	// (String) The Organization ID. If not set, the Org ID defined in the provider block will be used.
 	// The Organization ID. If not set, the Org ID defined in the provider block will be used.
 	// +crossplane:generate:reference:type=github.com/grafana/crossplane-provider-grafana/apis/oss/v1alpha1.Organization
@@ -121,6 +124,10 @@ type AnnotationParameters struct {
 	// +crossplane:generate:reference:selectorFieldName=DashboardSelector
 	// +kubebuilder:validation:Optional
 	DashboardUID *string `json:"dashboardUid,omitempty" tf:"dashboard_uid,omitempty"`
+
+	// (String) The ID of this resource.
+	// +kubebuilder:validation:Optional
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
 
 	// (String) The Organization ID. If not set, the Org ID defined in the provider block will be used.
 	// The Organization ID. If not set, the Org ID defined in the provider block will be used.

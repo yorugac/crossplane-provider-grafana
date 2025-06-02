@@ -55,6 +55,11 @@ func (in *AccessPolicyInitParameters) DeepCopyInto(out *AccessPolicyInitParamete
 		*out = new(string)
 		**out = **in
 	}
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
+		*out = new(string)
+		**out = **in
+	}
 	if in.Name != nil {
 		in, out := &in.Name, &out.Name
 		*out = new(string)
@@ -217,6 +222,11 @@ func (in *AccessPolicyParameters) DeepCopyInto(out *AccessPolicyParameters) {
 		*out = new(string)
 		**out = **in
 	}
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
+		*out = new(string)
+		**out = **in
+	}
 	if in.Name != nil {
 		in, out := &in.Name, &out.Name
 		*out = new(string)
@@ -344,6 +354,11 @@ func (in *AccessPolicyTokenInitParameters) DeepCopyInto(out *AccessPolicyTokenIn
 	}
 	if in.ExpiresAt != nil {
 		in, out := &in.ExpiresAt, &out.ExpiresAt
+		*out = new(string)
+		**out = **in
+	}
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
 		*out = new(string)
 		**out = **in
 	}
@@ -481,6 +496,11 @@ func (in *AccessPolicyTokenParameters) DeepCopyInto(out *AccessPolicyTokenParame
 	}
 	if in.ExpiresAt != nil {
 		in, out := &in.ExpiresAt, &out.ExpiresAt
+		*out = new(string)
+		**out = **in
+	}
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
 		*out = new(string)
 		**out = **in
 	}
@@ -923,6 +943,11 @@ func (in *PluginInstallationInitParameters) DeepCopyInto(out *PluginInstallation
 		*out = new(v1.Selector)
 		(*in).DeepCopyInto(*out)
 	}
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
+		*out = new(string)
+		**out = **in
+	}
 	if in.Slug != nil {
 		in, out := &in.Slug, &out.Slug
 		*out = new(string)
@@ -1030,6 +1055,11 @@ func (in *PluginInstallationParameters) DeepCopyInto(out *PluginInstallationPara
 		*out = new(v1.Selector)
 		(*in).DeepCopyInto(*out)
 	}
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
+		*out = new(string)
+		**out = **in
+	}
 	if in.Slug != nil {
 		in, out := &in.Slug, &out.Slug
 		*out = new(string)
@@ -1124,6 +1154,11 @@ func (in *PrivateDataSourceConnectNetworkInitParameters) DeepCopyInto(out *Priva
 	*out = *in
 	if in.DisplayName != nil {
 		in, out := &in.DisplayName, &out.DisplayName
+		*out = new(string)
+		**out = **in
+	}
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
 		*out = new(string)
 		**out = **in
 	}
@@ -1249,6 +1284,11 @@ func (in *PrivateDataSourceConnectNetworkParameters) DeepCopyInto(out *PrivateDa
 		*out = new(string)
 		**out = **in
 	}
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
+		*out = new(string)
+		**out = **in
+	}
 	if in.Name != nil {
 		in, out := &in.Name, &out.Name
 		*out = new(string)
@@ -1348,6 +1388,11 @@ func (in *PrivateDataSourceConnectNetworkTokenInitParameters) DeepCopyInto(out *
 	}
 	if in.ExpiresAt != nil {
 		in, out := &in.ExpiresAt, &out.ExpiresAt
+		*out = new(string)
+		**out = **in
+	}
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
 		*out = new(string)
 		**out = **in
 	}
@@ -1475,6 +1520,11 @@ func (in *PrivateDataSourceConnectNetworkTokenParameters) DeepCopyInto(out *Priv
 	}
 	if in.ExpiresAt != nil {
 		in, out := &in.ExpiresAt, &out.ExpiresAt
+		*out = new(string)
+		**out = **in
+	}
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
 		*out = new(string)
 		**out = **in
 	}
@@ -2258,6 +2308,11 @@ func (in *StackServiceAccountInitParameters) DeepCopyInto(out *StackServiceAccou
 		*out = new(v1.Selector)
 		(*in).DeepCopyInto(*out)
 	}
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
+		*out = new(string)
+		**out = **in
+	}
 	if in.IsDisabled != nil {
 		in, out := &in.IsDisabled, &out.IsDisabled
 		*out = new(bool)
@@ -2375,6 +2430,11 @@ func (in *StackServiceAccountParameters) DeepCopyInto(out *StackServiceAccountPa
 		*out = new(v1.Selector)
 		(*in).DeepCopyInto(*out)
 	}
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
+		*out = new(string)
+		**out = **in
+	}
 	if in.IsDisabled != nil {
 		in, out := &in.IsDisabled, &out.IsDisabled
 		*out = new(bool)
@@ -2481,6 +2541,11 @@ func (in *StackServiceAccountTokenInitParameters) DeepCopyInto(out *StackService
 		in, out := &in.CloudStackSelector, &out.CloudStackSelector
 		*out = new(v1.Selector)
 		(*in).DeepCopyInto(*out)
+	}
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
+		*out = new(string)
+		**out = **in
 	}
 	if in.Name != nil {
 		in, out := &in.Name, &out.Name
@@ -2618,6 +2683,11 @@ func (in *StackServiceAccountTokenParameters) DeepCopyInto(out *StackServiceAcco
 		in, out := &in.CloudStackSelector, &out.CloudStackSelector
 		*out = new(v1.Selector)
 		(*in).DeepCopyInto(*out)
+	}
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
+		*out = new(string)
+		**out = **in
 	}
 	if in.Name != nil {
 		in, out := &in.Name, &out.Name

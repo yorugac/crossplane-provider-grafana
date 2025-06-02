@@ -82,6 +82,9 @@ spec:
                       type: string
                     type: array
                     x-kubernetes-list-type: set
+                  id:
+                    description: (String) The ID of this resource.
+                    type: string
                   teamId:
                     description: |-
                       (String) The Team ID
@@ -183,6 +186,9 @@ spec:
                       type: string
                     type: array
                     x-kubernetes-list-type: set
+                  id:
+                    description: (String) The ID of this resource.
+                    type: string
                   teamId:
                     description: |-
                       (String) The Team ID

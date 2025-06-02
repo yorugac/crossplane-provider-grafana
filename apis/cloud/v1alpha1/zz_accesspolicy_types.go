@@ -23,6 +23,9 @@ type AccessPolicyInitParameters struct {
 	// Display name of the access policy. Defaults to the name.
 	DisplayName *string `json:"displayName,omitempty" tf:"display_name,omitempty"`
 
+	// (String) The ID of this resource.
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
+
 	// (String) Name of the access policy.
 	// Name of the access policy.
 	Name *string `json:"name,omitempty" tf:"name,omitempty"`
@@ -93,6 +96,10 @@ type AccessPolicyParameters struct {
 	// Display name of the access policy. Defaults to the name.
 	// +kubebuilder:validation:Optional
 	DisplayName *string `json:"displayName,omitempty" tf:"display_name,omitempty"`
+
+	// (String) The ID of this resource.
+	// +kubebuilder:validation:Optional
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
 
 	// (String) Name of the access policy.
 	// Name of the access policy.

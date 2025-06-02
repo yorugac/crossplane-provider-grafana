@@ -94,6 +94,9 @@ type NotificationPolicyInitParameters struct {
 	// Time to wait to buffer alerts of the same group before sending a notification. Default is 30 seconds.
 	GroupWait *string `json:"groupWait,omitempty" tf:"group_wait,omitempty"`
 
+	// (String) The ID of this resource.
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
+
 	// (String) The Organization ID. If not set, the Org ID defined in the provider block will be used.
 	// The Organization ID. If not set, the Org ID defined in the provider block will be used.
 	// +crossplane:generate:reference:type=github.com/grafana/crossplane-provider-grafana/apis/oss/v1alpha1.Organization
@@ -192,6 +195,10 @@ type NotificationPolicyParameters struct {
 	// Time to wait to buffer alerts of the same group before sending a notification. Default is 30 seconds.
 	// +kubebuilder:validation:Optional
 	GroupWait *string `json:"groupWait,omitempty" tf:"group_wait,omitempty"`
+
+	// (String) The ID of this resource.
+	// +kubebuilder:validation:Optional
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
 
 	// (String) The Organization ID. If not set, the Org ID defined in the provider block will be used.
 	// The Organization ID. If not set, the Org ID defined in the provider block will be used.

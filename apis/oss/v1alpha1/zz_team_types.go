@@ -80,6 +80,9 @@ type TeamInitParameters struct {
 	// An email address for the team.
 	Email *string `json:"email,omitempty" tf:"email,omitempty"`
 
+	// (String) The ID of this resource.
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
+
 	// (Boolean) Ignores team members that have been added to team by Team Sync.
 	// Team Sync can be provisioned using grafana_team_external_group resource.
 	// Defaults to true.
@@ -192,6 +195,10 @@ type TeamParameters struct {
 	// An email address for the team.
 	// +kubebuilder:validation:Optional
 	Email *string `json:"email,omitempty" tf:"email,omitempty"`
+
+	// (String) The ID of this resource.
+	// +kubebuilder:validation:Optional
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
 
 	// (Boolean) Ignores team members that have been added to team by Team Sync.
 	// Team Sync can be provisioned using grafana_team_external_group resource.

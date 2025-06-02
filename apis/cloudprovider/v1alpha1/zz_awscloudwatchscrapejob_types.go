@@ -76,7 +76,7 @@ type AwsCloudwatchScrapeJobObservation struct {
 	// When enabled, AWS resource tags are exported as Prometheus labels to metrics formatted as `aws_<service_name>_info`.
 	ExportTags *bool `json:"exportTags,omitempty" tf:"export_tags,omitempty"`
 
-	// This has the format "{{ stack_id }}:{{ name }}".
+	// This has the format "{{ stack_id }}:{{ name }}". This has the format "{{ stack_id }}:{{ name }}".
 	ID *string `json:"id,omitempty" tf:"id,omitempty"`
 
 	// (String) The name of the AWS CloudWatch Scrape Job.

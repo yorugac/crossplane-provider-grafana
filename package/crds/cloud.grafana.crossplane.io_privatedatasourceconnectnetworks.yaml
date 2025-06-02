@@ -81,6 +81,9 @@ spec:
                       (String) Display name of the PDC network. Defaults to the name.
                       Display name of the PDC network. Defaults to the name.
                     type: string
+                  id:
+                    description: (String) The ID of this resource.
+                    type: string
                   name:
                     description: |-
                       cloud/developer-resources/api-reference/cloud-api/#request-body
@@ -114,6 +117,9 @@ spec:
                     description: |-
                       (String) Display name of the PDC network. Defaults to the name.
                       Display name of the PDC network. Defaults to the name.
+                    type: string
+                  id:
+                    description: (String) The ID of this resource.
                     type: string
                   name:
                     description: |-

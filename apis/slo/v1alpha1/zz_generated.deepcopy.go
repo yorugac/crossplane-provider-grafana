@@ -1170,6 +1170,11 @@ func (in *SLOInitParameters) DeepCopyInto(out *SLOInitParameters) {
 		*out = new(string)
 		**out = **in
 	}
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
+		*out = new(string)
+		**out = **in
+	}
 	if in.Label != nil {
 		in, out := &in.Label, &out.Label
 		*out = make([]SLOLabelInitParameters, len(*in))
@@ -1419,6 +1424,11 @@ func (in *SLOParameters) DeepCopyInto(out *SLOParameters) {
 	}
 	if in.FolderUID != nil {
 		in, out := &in.FolderUID, &out.FolderUID
+		*out = new(string)
+		**out = **in
+	}
+	if in.ID != nil {
+		in, out := &in.ID, &out.ID
 		*out = new(string)
 		**out = **in
 	}

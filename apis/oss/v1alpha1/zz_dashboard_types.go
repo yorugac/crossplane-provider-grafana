@@ -35,6 +35,9 @@ type DashboardInitParameters struct {
 	// +kubebuilder:validation:Optional
 	FolderSelector *v1.Selector `json:"folderSelector,omitempty" tf:"-"`
 
+	// (String) The ID of this resource.
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
+
 	// (String) Set a commit message for the version history.
 	// Set a commit message for the version history.
 	Message *string `json:"message,omitempty" tf:"message,omitempty"`
@@ -124,6 +127,10 @@ type DashboardParameters struct {
 	// Selector for a Folder in oss to populate folder.
 	// +kubebuilder:validation:Optional
 	FolderSelector *v1.Selector `json:"folderSelector,omitempty" tf:"-"`
+
+	// (String) The ID of this resource.
+	// +kubebuilder:validation:Optional
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
 
 	// (String) Set a commit message for the version history.
 	// Set a commit message for the version history.

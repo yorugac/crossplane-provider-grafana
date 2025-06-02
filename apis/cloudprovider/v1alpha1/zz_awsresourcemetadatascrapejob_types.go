@@ -60,7 +60,7 @@ type AwsResourceMetadataScrapeJobObservation struct {
 	// Whether the AWS Resource Metadata Scrape Job is enabled or not.
 	Enabled *bool `json:"enabled,omitempty" tf:"enabled,omitempty"`
 
-	// This has the format "{{ stack_id }}:{{ name }}".
+	// This has the format "{{ stack_id }}:{{ name }}". This has the format "{{ stack_id }}:{{ name }}".
 	ID *string `json:"id,omitempty" tf:"id,omitempty"`
 
 	// (String) The name of the AWS Resource Metadata Scrape Job.

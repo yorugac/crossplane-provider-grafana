@@ -78,6 +78,9 @@ spec:
                   disableProvenance:
                     description: Defaults to false. Defaults to `false`.
                     type: boolean
+                  id:
+                    description: (String) The ID of this resource.
+                    type: string
                   name:
                     description: |-
                       (String) The name of the notification template group.
@@ -184,6 +187,9 @@ spec:
                   disableProvenance:
                     description: Defaults to false. Defaults to `false`.
                     type: boolean
+                  id:
+                    description: (String) The ID of this resource.
+                    type: string
                   name:
                     description: |-
                       (String) The name of the notification template group.

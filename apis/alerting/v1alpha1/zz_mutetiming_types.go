@@ -105,6 +105,9 @@ type MuteTimingInitParameters struct {
 	// Defaults to false. Defaults to `false`.
 	DisableProvenance *bool `json:"disableProvenance,omitempty" tf:"disable_provenance,omitempty"`
 
+	// (String) The ID of this resource.
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
+
 	// (Block List) The time intervals at which to mute notifications. Use an empty block to mute all the time. (see below for nested schema)
 	// The time intervals at which to mute notifications. Use an empty block to mute all the time.
 	Intervals []IntervalsInitParameters `json:"intervals,omitempty" tf:"intervals,omitempty"`
@@ -155,6 +158,10 @@ type MuteTimingParameters struct {
 	// Defaults to false. Defaults to `false`.
 	// +kubebuilder:validation:Optional
 	DisableProvenance *bool `json:"disableProvenance,omitempty" tf:"disable_provenance,omitempty"`
+
+	// (String) The ID of this resource.
+	// +kubebuilder:validation:Optional
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
 
 	// (Block List) The time intervals at which to mute notifications. Use an empty block to mute all the time. (see below for nested schema)
 	// The time intervals at which to mute notifications. Use an empty block to mute all the time.

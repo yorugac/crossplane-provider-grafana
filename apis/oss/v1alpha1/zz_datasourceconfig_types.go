@@ -16,6 +16,9 @@ import (
 type DataSourceConfigInitParameters struct {
 	HTTPHeaders map[string]*string `json:"httpHeadersSecretRef,omitempty" tf:"-"`
 
+	// (String) The ID of this resource.
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
+
 	// (String) Serialized JSON string containing the json data. This attribute can be used to pass configuration options to the data source. To figure out what options a datasource has available, see its docs or inspect the network data when saving it from the Grafana UI. Note that keys in this map are usually camelCased.
 	// Serialized JSON string containing the json data. This attribute can be used to pass configuration options to the data source. To figure out what options a datasource has available, see its docs or inspect the network data when saving it from the Grafana UI. Note that keys in this map are usually camelCased.
 	JSONDataEncoded *string `json:"jsonDataEncoded,omitempty" tf:"json_data_encoded,omitempty"`
@@ -68,6 +71,10 @@ type DataSourceConfigParameters struct {
 	// Custom HTTP headers
 	// +kubebuilder:validation:Optional
 	HTTPHeadersSecretRef *v1.SecretReference `json:"httpHeadersSecretRef,omitempty" tf:"-"`
+
+	// (String) The ID of this resource.
+	// +kubebuilder:validation:Optional
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
 
 	// (String) Serialized JSON string containing the json data. This attribute can be used to pass configuration options to the data source. To figure out what options a datasource has available, see its docs or inspect the network data when saving it from the Grafana UI. Note that keys in this map are usually camelCased.
 	// Serialized JSON string containing the json data. This attribute can be used to pass configuration options to the data source. To figure out what options a datasource has available, see its docs or inspect the network data when saving it from the Grafana UI. Note that keys in this map are usually camelCased.

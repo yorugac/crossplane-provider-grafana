@@ -148,6 +148,9 @@ spec:
                             type: string
                         type: object
                     type: object
+                  id:
+                    description: (String) The ID of this resource.
+                    type: string
                   orgId:
                     description: |-
                       (String) The Organization ID. If not set, the Org ID defined in the provider block will be used.
@@ -335,6 +338,9 @@ spec:
                             type: string
                         type: object
                     type: object
+                  id:
+                    description: (String) The ID of this resource.
+                    type: string
                   orgId:
                     description: |-
                       (String) The Organization ID. If not set, the Org ID defined in the provider block will be used.

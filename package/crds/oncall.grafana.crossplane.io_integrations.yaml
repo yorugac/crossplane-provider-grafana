@@ -217,6 +217,9 @@ spec:
                           type: array
                       type: object
                     type: array
+                  id:
+                    description: (String) The ID of this resource.
+                    type: string
                   labels:
                     description: |-
                       to-string mappings. Each map must include one key named "key" and one key named "value".
@@ -580,6 +583,9 @@ spec:
                           type: array
                       type: object
                     type: array
+                  id:
+                    description: (String) The ID of this resource.
+                    type: string
                   labels:
                     description: |-
                       to-string mappings. Each map must include one key named "key" and one key named "value".

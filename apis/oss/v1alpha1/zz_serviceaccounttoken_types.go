@@ -15,6 +15,9 @@ import (
 
 type ServiceAccountTokenInitParameters struct {
 
+	// (String) The ID of this resource.
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
+
 	// (String) The name of the service account token.
 	// The name of the service account token.
 	Name *string `json:"name,omitempty" tf:"name,omitempty"`
@@ -66,6 +69,10 @@ type ServiceAccountTokenObservation struct {
 }
 
 type ServiceAccountTokenParameters struct {
+
+	// (String) The ID of this resource.
+	// +kubebuilder:validation:Optional
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
 
 	// (String) The name of the service account token.
 	// The name of the service account token.

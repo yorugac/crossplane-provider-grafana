@@ -33,6 +33,9 @@ type DataSourceInitParameters struct {
 
 	HTTPHeaders map[string]*string `json:"httpHeadersSecretRef,omitempty" tf:"-"`
 
+	// (String) The ID of this resource.
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
+
 	// (Boolean) Whether to set the data source as default. This should only be true to a single data source. Defaults to false.
 	// Whether to set the data source as default. This should only be `true` to a single data source. Defaults to `false`.
 	IsDefault *bool `json:"isDefault,omitempty" tf:"is_default,omitempty"`
@@ -169,6 +172,10 @@ type DataSourceParameters struct {
 	// Custom HTTP headers
 	// +kubebuilder:validation:Optional
 	HTTPHeadersSecretRef *v1.SecretReference `json:"httpHeadersSecretRef,omitempty" tf:"-"`
+
+	// (String) The ID of this resource.
+	// +kubebuilder:validation:Optional
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
 
 	// (Boolean) Whether to set the data source as default. This should only be true to a single data source. Defaults to false.
 	// Whether to set the data source as default. This should only be `true` to a single data source. Defaults to `false`.

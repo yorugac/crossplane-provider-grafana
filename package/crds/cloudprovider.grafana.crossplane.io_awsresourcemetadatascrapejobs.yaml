@@ -436,6 +436,7 @@ spec:
                     type: boolean
                   id:
                     description: This has the format "{{ stack_id }}:{{ name }}".
+                      This has the format "{{ stack_id }}:{{ name }}".
                     type: string
                   name:
                     description: |-

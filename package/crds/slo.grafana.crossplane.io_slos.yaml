@@ -325,6 +325,9 @@ spec:
                       (String) UID for the SLO folder
                       UID for the SLO folder
                     type: string
+                  id:
+                    description: (String) The ID of this resource.
+                    type: string
                   label:
                     description: |-
                       "^[a-zA-Z_][a-zA-Z0-9_]*$" (see below for nested schema)
@@ -696,6 +699,9 @@ spec:
                     description: |-
                       (String) UID for the SLO folder
                       UID for the SLO folder
+                    type: string
+                  id:
+                    description: (String) The ID of this resource.
                     type: string
                   label:
                     description: |-

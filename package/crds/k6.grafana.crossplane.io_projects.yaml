@@ -285,8 +285,10 @@ spec:
                       The Grafana folder uid.
                     type: string
                   id:
-                    description: (Number) Numeric identifier of the project.
-                    type: string
+                    description: |-
+                      (Number) Numeric identifier of the project.
+                      Numeric identifier of the project.
+                    type: number
                   isDefault:
                     description: |-
                       (Boolean) Use this project as default for running tests when no explicit project identifier is provided.

@@ -19,6 +19,9 @@ type PrivateDataSourceConnectNetworkInitParameters struct {
 	// Display name of the PDC network. Defaults to the name.
 	DisplayName *string `json:"displayName,omitempty" tf:"display_name,omitempty"`
 
+	// (String) The ID of this resource.
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
+
 	// cloud/developer-resources/api-reference/cloud-api/#request-body
 	// Name of the PDC network.**Note:** The name must be lowercase and can contain hyphens or underscores. See full requirements here: https://grafana.com/docs/grafana-cloud/developer-resources/api-reference/cloud-api/#request-body
 	Name *string `json:"name,omitempty" tf:"name,omitempty"`
@@ -72,6 +75,10 @@ type PrivateDataSourceConnectNetworkParameters struct {
 	// Display name of the PDC network. Defaults to the name.
 	// +kubebuilder:validation:Optional
 	DisplayName *string `json:"displayName,omitempty" tf:"display_name,omitempty"`
+
+	// (String) The ID of this resource.
+	// +kubebuilder:validation:Optional
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
 
 	// cloud/developer-resources/api-reference/cloud-api/#request-body
 	// Name of the PDC network.**Note:** The name must be lowercase and can contain hyphens or underscores. See full requirements here: https://grafana.com/docs/grafana-cloud/developer-resources/api-reference/cloud-api/#request-body

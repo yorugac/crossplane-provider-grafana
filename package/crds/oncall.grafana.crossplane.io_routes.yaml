@@ -153,6 +153,9 @@ spec:
                             type: string
                         type: object
                     type: object
+                  id:
+                    description: (String) The ID of this resource.
+                    type: string
                   integrationId:
                     description: |-
                       (String) The ID of the integration.
@@ -398,6 +401,9 @@ spec:
                             type: string
                         type: object
                     type: object
+                  id:
+                    description: (String) The ID of this resource.
+                    type: string
                   integrationId:
                     description: |-
                       (String) The ID of the integration.

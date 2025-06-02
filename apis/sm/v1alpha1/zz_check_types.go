@@ -249,6 +249,7 @@ type CheckObservation struct {
 	Frequency *float64 `json:"frequency,omitempty" tf:"frequency,omitempty"`
 
 	// (String) The ID of the check.
+	// The ID of the check.
 	ID *string `json:"id,omitempty" tf:"id,omitempty"`
 
 	// (String) Name used for job label.

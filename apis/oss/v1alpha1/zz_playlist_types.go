@@ -67,6 +67,9 @@ type ItemParameters struct {
 
 type PlaylistInitParameters struct {
 
+	// (String) The ID of this resource.
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
+
 	// (String)
 	Interval *string `json:"interval,omitempty" tf:"interval,omitempty"`
 
@@ -114,6 +117,10 @@ type PlaylistObservation struct {
 }
 
 type PlaylistParameters struct {
+
+	// (String) The ID of this resource.
+	// +kubebuilder:validation:Optional
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
 
 	// (String)
 	// +kubebuilder:validation:Optional

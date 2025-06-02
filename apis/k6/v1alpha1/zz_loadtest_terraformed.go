@@ -44,9 +44,9 @@ func (tr *LoadTest) SetObservation(obs map[string]any) error {
 }
 
 // GetID returns ID of underlying Terraform resource of this LoadTest
-func (tr *LoadTest) GetID() string {
+func (tr *LoadTest) GetID() float64 {
 	if tr.Status.AtProvider.ID == nil {
-		return ""
+		return 0
 	}
 	return *tr.Status.AtProvider.ID
 }

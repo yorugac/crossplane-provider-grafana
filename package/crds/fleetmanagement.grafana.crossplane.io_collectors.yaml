@@ -294,7 +294,9 @@ spec:
                       Whether the collector is enabled or not
                     type: boolean
                   id:
-                    description: (String) ID of the collector
+                    description: |-
+                      (String) ID of the collector
+                      ID of the collector
                     type: string
                   remoteAttributes:
                     additionalProperties:

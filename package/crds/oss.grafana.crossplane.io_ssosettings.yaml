@@ -76,6 +76,9 @@ spec:
                 type: string
               forProvider:
                 properties:
+                  id:
+                    description: (String) The ID of this resource.
+                    type: string
                   ldapSettings:
                     description: |-
                       (Block Set, Max: 1) The LDAP settings set. Required for the ldap provider. (see below for nested schema)
@@ -771,6 +774,9 @@ spec:
                   for example because of an external controller is managing them, like an
                   autoscaler.
                 properties:
+                  id:
+                    description: (String) The ID of this resource.
+                    type: string
                   ldapSettings:
                     description: |-
                       (Block Set, Max: 1) The LDAP settings set. Required for the ldap provider. (see below for nested schema)

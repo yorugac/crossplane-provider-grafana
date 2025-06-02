@@ -87,6 +87,9 @@ spec:
                       (String) The URL of the external calendar iCal file.
                       The URL of the external calendar iCal file.
                     type: string
+                  id:
+                    description: (String) The ID of this resource.
+                    type: string
                   name:
                     description: |-
                       (String) The schedule's name.
@@ -239,6 +242,9 @@ spec:
                     description: |-
                       (String) The URL of the external calendar iCal file.
                       The URL of the external calendar iCal file.
+                    type: string
+                  id:
+                    description: (String) The ID of this resource.
                     type: string
                   name:
                     description: |-

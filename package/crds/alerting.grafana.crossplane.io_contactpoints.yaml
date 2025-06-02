@@ -356,6 +356,9 @@ spec:
                           type: object
                       type: object
                     type: array
+                  id:
+                    description: (String) The ID of this resource.
+                    type: string
                   kafka:
                     description: |-
                       (Block Set) A contact point that publishes notifications to Apache Kafka topics. (see below for nested schema)
@@ -2103,6 +2106,9 @@ spec:
                       - urlSecretRef
                       type: object
                     type: array
+                  id:
+                    description: (String) The ID of this resource.
+                    type: string
                   kafka:
                     description: |-
                       (Block Set) A contact point that publishes notifications to Apache Kafka topics. (see below for nested schema)

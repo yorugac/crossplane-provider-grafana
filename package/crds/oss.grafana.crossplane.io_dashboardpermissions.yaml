@@ -155,6 +155,9 @@ spec:
                       (String) UID of the dashboard to apply permissions to.
                       UID of the dashboard to apply permissions to.
                     type: string
+                  id:
+                    description: (String) The ID of this resource.
+                    type: string
                   orgId:
                     description: |-
                       (String) The Organization ID. If not set, the Org ID defined in the provider block will be used.
@@ -502,6 +505,9 @@ spec:
                     description: |-
                       (String) UID of the dashboard to apply permissions to.
                       UID of the dashboard to apply permissions to.
+                    type: string
+                  id:
+                    description: (String) The ID of this resource.
                     type: string
                   orgId:
                     description: |-

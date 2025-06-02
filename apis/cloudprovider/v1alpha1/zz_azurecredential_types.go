@@ -94,7 +94,7 @@ type AzureCredentialObservation struct {
 	// The client ID of the Azure Credential.
 	ClientID *string `json:"clientId,omitempty" tf:"client_id,omitempty"`
 
-	// This has the format "{{ stack_id }}:{{ resource_id }}".
+	// This has the format "{{ stack_id }}:{{ resource_id }}". This has the format "{{ stack_id }}:{{ resource_id }}".
 	ID *string `json:"id,omitempty" tf:"id,omitempty"`
 
 	// (String) The name of the Azure Credential.

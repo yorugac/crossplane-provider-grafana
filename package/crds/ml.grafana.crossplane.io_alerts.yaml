@@ -356,6 +356,7 @@ spec:
                       alert.
                     type: string
                   id:
+                    description: The ID of the alert.
                     type: string
                   jobId:
                     description: The forecast this alert belongs to.

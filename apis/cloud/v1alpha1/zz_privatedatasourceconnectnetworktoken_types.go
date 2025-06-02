@@ -23,6 +23,9 @@ type PrivateDataSourceConnectNetworkTokenInitParameters struct {
 	// Expiration date of the private data source network token. Does not expire by default.
 	ExpiresAt *string `json:"expiresAt,omitempty" tf:"expires_at,omitempty"`
 
+	// (String) The ID of this resource.
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
+
 	// (String) Name of the private data source network token.
 	// Name of the private data source network token.
 	Name *string `json:"name,omitempty" tf:"name,omitempty"`
@@ -81,6 +84,10 @@ type PrivateDataSourceConnectNetworkTokenParameters struct {
 	// Expiration date of the private data source network token. Does not expire by default.
 	// +kubebuilder:validation:Optional
 	ExpiresAt *string `json:"expiresAt,omitempty" tf:"expires_at,omitempty"`
+
+	// (String) The ID of this resource.
+	// +kubebuilder:validation:Optional
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
 
 	// (String) Name of the private data source network token.
 	// Name of the private data source network token.

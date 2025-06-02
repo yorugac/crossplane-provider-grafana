@@ -178,6 +178,9 @@ spec:
                       (String) Time to wait to buffer alerts of the same group before sending a notification. Default is 30 seconds.
                       Time to wait to buffer alerts of the same group before sending a notification. Default is 30 seconds.
                     type: string
+                  id:
+                    description: (String) The ID of this resource.
+                    type: string
                   orgId:
                     description: |-
                       (String) The Organization ID. If not set, the Org ID defined in the provider block will be used.
@@ -1279,6 +1282,9 @@ spec:
                     description: |-
                       (String) Time to wait to buffer alerts of the same group before sending a notification. Default is 30 seconds.
                       Time to wait to buffer alerts of the same group before sending a notification. Default is 30 seconds.
+                    type: string
+                  id:
+                    description: (String) The ID of this resource.
                     type: string
                   orgId:
                     description: |-

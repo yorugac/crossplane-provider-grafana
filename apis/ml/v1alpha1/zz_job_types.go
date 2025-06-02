@@ -86,6 +86,7 @@ type JobObservation struct {
 	// +mapType=granular
 	HyperParams map[string]*string `json:"hyperParams,omitempty" tf:"hyper_params,omitempty"`
 
+	// The ID of the job.
 	ID *string `json:"id,omitempty" tf:"id,omitempty"`
 
 	// The data interval in seconds to train the data on. Defaults to `300`.

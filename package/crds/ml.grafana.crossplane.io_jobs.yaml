@@ -582,6 +582,7 @@ spec:
                     type: object
                     x-kubernetes-map-type: granular
                   id:
+                    description: The ID of the job.
                     type: string
                   interval:
                     description: The data interval in seconds to train the data on.

@@ -32,6 +32,7 @@ type CollectorObservation struct {
 	Enabled *bool `json:"enabled,omitempty" tf:"enabled,omitempty"`
 
 	// (String) ID of the collector
+	// ID of the collector
 	ID *string `json:"id,omitempty" tf:"id,omitempty"`
 
 	// (Map of String) Remote attributes for the collector

@@ -444,7 +444,9 @@ spec:
                     description: (Number)
                     type: number
                   id:
-                    description: (String) The stack id assigned to this stack by Grafana.
+                    description: |-
+                      (String) The stack id assigned to this stack by Grafana.
+                      The stack id assigned to this stack by Grafana.
                     type: string
                   influxUrl:
                     description: |-

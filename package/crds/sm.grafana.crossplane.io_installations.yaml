@@ -154,6 +154,9 @@ spec:
                             type: string
                         type: object
                     type: object
+                  id:
+                    description: (String) The ID of this resource.
+                    type: string
                   metricsPublisherKeySecretRef:
                     description: |-
                       (String, Sensitive) The Grafana Cloud access policy with the following scopes: stacks:read, metrics:write, logs:write, traces:write. This is used to publish metrics and logs to Grafana Cloud stack.
@@ -271,6 +274,9 @@ spec:
                             type: string
                         type: object
                     type: object
+                  id:
+                    description: (String) The ID of this resource.
+                    type: string
                   metricsPublisherKeySecretRef:
                     description: |-
                       (String, Sensitive) The Grafana Cloud access policy with the following scopes: stacks:read, metrics:write, logs:write, traces:write. This is used to publish metrics and logs to Grafana Cloud stack.

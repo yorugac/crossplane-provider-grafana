@@ -124,6 +124,7 @@ type StackObservation struct {
 	GraphiteUserID *float64 `json:"graphiteUserId,omitempty" tf:"graphite_user_id,omitempty"`
 
 	// (String) The stack id assigned to this stack by Grafana.
+	// The stack id assigned to this stack by Grafana.
 	ID *string `json:"id,omitempty" tf:"id,omitempty"`
 
 	// cloud/send-data/metrics/metrics-influxdb/push-from-telegraf/ for docs on how to use this.

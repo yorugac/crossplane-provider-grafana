@@ -748,7 +748,9 @@ spec:
                     type: array
                     x-kubernetes-list-type: set
                   id:
-                    description: (String) Generated identifier of the report.
+                    description: |-
+                      (String) Generated identifier of the report.
+                      Generated identifier of the report.
                     type: string
                   includeDashboardLink:
                     description: |-

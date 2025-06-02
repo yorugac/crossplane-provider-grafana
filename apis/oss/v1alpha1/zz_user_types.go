@@ -19,6 +19,9 @@ type UserInitParameters struct {
 	// The email address of the Grafana user.
 	Email *string `json:"email,omitempty" tf:"email,omitempty"`
 
+	// (String) The ID of this resource.
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
+
 	// (Boolean) Whether to make user an admin. Defaults to false.
 	// Whether to make user an admin. Defaults to `false`.
 	IsAdmin *bool `json:"isAdmin,omitempty" tf:"is_admin,omitempty"`
@@ -68,6 +71,10 @@ type UserParameters struct {
 	// The email address of the Grafana user.
 	// +kubebuilder:validation:Optional
 	Email *string `json:"email,omitempty" tf:"email,omitempty"`
+
+	// (String) The ID of this resource.
+	// +kubebuilder:validation:Optional
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
 
 	// (Boolean) Whether to make user an admin. Defaults to false.
 	// Whether to make user an admin. Defaults to `false`.

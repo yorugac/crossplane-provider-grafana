@@ -96,6 +96,9 @@ spec:
                       (String) Display name of the access policy. Defaults to the name.
                       Display name of the access policy. Defaults to the name.
                     type: string
+                  id:
+                    description: (String) The ID of this resource.
+                    type: string
                   name:
                     description: |-
                       (String) Name of the access policy.
@@ -249,6 +252,9 @@ spec:
                     description: |-
                       (String) Display name of the access policy. Defaults to the name.
                       Display name of the access policy. Defaults to the name.
+                    type: string
+                  id:
+                    description: (String) The ID of this resource.
                     type: string
                   name:
                     description: |-

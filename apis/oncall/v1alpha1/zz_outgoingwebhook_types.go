@@ -35,6 +35,9 @@ type OutgoingWebhookInitParameters struct {
 	// Headers to add to the outgoing webhook request.
 	Headers *string `json:"headers,omitempty" tf:"headers,omitempty"`
 
+	// (String) The ID of this resource.
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
+
 	// (List of String) Restricts the outgoing webhook to only trigger if the event came from a selected integration. If no integrations are selected the outgoing webhook will trigger for any integration.
 	// Restricts the outgoing webhook to only trigger if the event came from a selected integration. If no integrations are selected the outgoing webhook will trigger for any integration.
 	IntegrationFilter []*string `json:"integrationFilter,omitempty" tf:"integration_filter,omitempty"`
@@ -152,6 +155,10 @@ type OutgoingWebhookParameters struct {
 	// Headers to add to the outgoing webhook request.
 	// +kubebuilder:validation:Optional
 	Headers *string `json:"headers,omitempty" tf:"headers,omitempty"`
+
+	// (String) The ID of this resource.
+	// +kubebuilder:validation:Optional
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
 
 	// (List of String) Restricts the outgoing webhook to only trigger if the event came from a selected integration. If no integrations are selected the outgoing webhook will trigger for any integration.
 	// Restricts the outgoing webhook to only trigger if the event came from a selected integration. If no integrations are selected the outgoing webhook will trigger for any integration.

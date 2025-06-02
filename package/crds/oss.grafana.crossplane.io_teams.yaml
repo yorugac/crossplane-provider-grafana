@@ -79,6 +79,9 @@ spec:
                       (String) An email address for the team.
                       An email address for the team.
                     type: string
+                  id:
+                    description: (String) The ID of this resource.
+                    type: string
                   ignoreExternallySyncedMembers:
                     description: |-
                       (Boolean) Ignores team members that have been added to team by Team Sync.
@@ -319,6 +322,9 @@ spec:
                     description: |-
                       (String) An email address for the team.
                       An email address for the team.
+                    type: string
+                  id:
+                    description: (String) The ID of this resource.
                     type: string
                   ignoreExternallySyncedMembers:
                     description: |-

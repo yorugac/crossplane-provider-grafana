@@ -176,7 +176,7 @@ func (in *AppObservation) DeepCopyInto(out *AppObservation) {
 	}
 	if in.ID != nil {
 		in, out := &in.ID, &out.ID
-		*out = new(string)
+		*out = new(float64)
 		**out = **in
 	}
 	if in.Name != nil {

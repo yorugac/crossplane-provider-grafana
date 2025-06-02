@@ -15,6 +15,9 @@ import (
 
 type ServiceAccountInitParameters struct {
 
+	// (String) The ID of this resource.
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
+
 	// (Boolean) The disabled status for the service account. Defaults to false.
 	// The disabled status for the service account. Defaults to `false`.
 	IsDisabled *bool `json:"isDisabled,omitempty" tf:"is_disabled,omitempty"`
@@ -66,6 +69,10 @@ type ServiceAccountObservation struct {
 }
 
 type ServiceAccountParameters struct {
+
+	// (String) The ID of this resource.
+	// +kubebuilder:validation:Optional
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
 
 	// (Boolean) The disabled status for the service account. Defaults to false.
 	// The disabled status for the service account. Defaults to `false`.

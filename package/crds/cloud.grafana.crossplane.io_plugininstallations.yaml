@@ -148,6 +148,9 @@ spec:
                             type: string
                         type: object
                     type: object
+                  id:
+                    description: (String) The ID of this resource.
+                    type: string
                   slug:
                     description: |-
                       (String) Slug of the plugin to be installed.
@@ -251,6 +254,9 @@ spec:
                             type: string
                         type: object
                     type: object
+                  id:
+                    description: (String) The ID of this resource.
+                    type: string
                   slug:
                     description: |-
                       (String) Slug of the plugin to be installed.

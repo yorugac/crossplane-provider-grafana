@@ -18,6 +18,9 @@ type MessageTemplateInitParameters struct {
 	// Defaults to false. Defaults to `false`.
 	DisableProvenance *bool `json:"disableProvenance,omitempty" tf:"disable_provenance,omitempty"`
 
+	// (String) The ID of this resource.
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
+
 	// (String) The name of the notification template group.
 	// The name of the notification template group.
 	Name *string `json:"name,omitempty" tf:"name,omitempty"`
@@ -68,6 +71,10 @@ type MessageTemplateParameters struct {
 	// Defaults to false. Defaults to `false`.
 	// +kubebuilder:validation:Optional
 	DisableProvenance *bool `json:"disableProvenance,omitempty" tf:"disable_provenance,omitempty"`
+
+	// (String) The ID of this resource.
+	// +kubebuilder:validation:Optional
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
 
 	// (String) The name of the notification template group.
 	// The name of the notification template group.

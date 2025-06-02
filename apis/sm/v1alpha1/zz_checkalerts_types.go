@@ -61,6 +61,9 @@ type CheckAlertsInitParameters struct {
 	// (Number) The ID of the check to manage alerts for.
 	// The ID of the check to manage alerts for.
 	CheckID *float64 `json:"checkId,omitempty" tf:"check_id,omitempty"`
+
+	// (String) The ID of this resource.
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
 }
 
 type CheckAlertsObservation struct {
@@ -88,6 +91,10 @@ type CheckAlertsParameters struct {
 	// The ID of the check to manage alerts for.
 	// +kubebuilder:validation:Optional
 	CheckID *float64 `json:"checkId,omitempty" tf:"check_id,omitempty"`
+
+	// (String) The ID of this resource.
+	// +kubebuilder:validation:Optional
+	ID *string `json:"id,omitempty" tf:"id,omitempty"`
 }
 
 // CheckAlertsSpec defines the desired state of CheckAlerts

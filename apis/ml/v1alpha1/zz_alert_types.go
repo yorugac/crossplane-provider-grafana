@@ -60,6 +60,7 @@ type AlertObservation struct {
 	// How long values must be anomalous before firing an alert.
 	For *string `json:"for,omitempty" tf:"for,omitempty"`
 
+	// The ID of the alert.
 	ID *string `json:"id,omitempty" tf:"id,omitempty"`
 
 	// The forecast this alert belongs to.

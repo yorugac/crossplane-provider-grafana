@@ -93,6 +93,9 @@ spec:
                     - name
                     - namespace
                     type: object
+                  id:
+                    description: (String) The ID of this resource.
+                    type: string
                   jsonDataEncoded:
                     description: |-
                       (String) Serialized JSON string containing the json data. This attribute can be used to pass configuration options to the data source. To figure out what options a datasource has available, see its docs or inspect the network data when saving it from the Grafana UI. Note that keys in this map are usually camelCased.
@@ -219,6 +222,9 @@ spec:
                     additionalProperties:
                       type: string
                     type: object
+                  id:
+                    description: (String) The ID of this resource.
+                    type: string
                   jsonDataEncoded:
                     description: |-
                       (String) Serialized JSON string containing the json data. This attribute can be used to pass configuration options to the data source. To figure out what options a datasource has available, see its docs or inspect the network data when saving it from the Grafana UI. Note that keys in this map are usually camelCased.

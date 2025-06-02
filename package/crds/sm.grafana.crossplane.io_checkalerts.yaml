@@ -95,6 +95,9 @@ spec:
                       (Number) The ID of the check to manage alerts for.
                       The ID of the check to manage alerts for.
                     type: number
+                  id:
+                    description: (String) The ID of this resource.
+                    type: string
                 type: object
               initProvider:
                 description: |-
@@ -131,6 +134,9 @@ spec:
                       (Number) The ID of the check to manage alerts for.
                       The ID of the check to manage alerts for.
                     type: number
+                  id:
+                    description: (String) The ID of this resource.
+                    type: string
                 type: object
               managementPolicies:
                 default:
