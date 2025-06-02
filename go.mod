@@ -2,6 +2,8 @@ module github.com/grafana/crossplane-provider-grafana
 
 go 1.24.2
 
+replace github.com/crossplane/upjet => github.com/yorugac/upjet v0.0.0-20250602101317-7864e8b6220a
+
 require (
 	dario.cat/mergo v1.0.2
 	github.com/crossplane/crossplane-runtime v1.20.0-rc.0.0.20250509113121-26da25aff65f
